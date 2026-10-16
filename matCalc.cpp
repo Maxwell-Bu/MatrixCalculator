@@ -12,16 +12,27 @@ public:
 };
 
 int main() {
-	std::string input;
+	char input;
 
 	while (true) {
 	
+		std::cout << "N: Create New Matrix" << "\n";
+		std::cout << "X: Exit" << "\n";
+
 		std::cout << "Whaddya wanna do?: ";
 		std::cin >> input;	
 	
-		if (input == "exit") {
+		if (input == 'X') {
 			break;
 	
+		}
+
+		switch (input) {
+			case 'N':
+				std::cout << "It Worked!" << "\n";
+				break;
+			default:
+				std::cout << "No" << "\n";
 		}
 	}
 
